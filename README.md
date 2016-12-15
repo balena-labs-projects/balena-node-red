@@ -7,7 +7,7 @@ Variable Name | Default | Description
 ------------ | ------------- | -------------
 PORT | `80` | the port on which expose the Node-RED UI
 USERNAME | `none` | the Node-RED admin username
-PASSWORD | `none` | the Node-REd admin password [hash](https://nodered.org/docs/security#generating-the-password-hash)
+PASSWORD | `none` | the Node-RED admin password [hash](https://nodered.org/docs/security#generating-the-password-hash)
 
 ## License
 
