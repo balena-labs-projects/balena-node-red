@@ -1,0 +1,14 @@
+{
+    "name": "resin-node-red",
+    "version": "0.0.1",
+    "dependencies": {
+        "node-red": "^0.15.2",
+        "node-red-contrib-resinio": "0.1.7"
+    },
+    "devDependencies": {},
+    "jshintConfig": {
+        "esnext": true,
+        "strict": true
+    },
+    "scripts": {}
+}
