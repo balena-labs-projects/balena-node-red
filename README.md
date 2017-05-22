@@ -9,6 +9,10 @@ PORT | `80` | the port on which expose the Node-RED UI
 USERNAME | `none` | the Node-RED admin username
 PASSWORD | `none` | the Node-RED admin password [hash](https://nodered.org/docs/security#generating-the-password-hash)
 
+It is not optionnal to set up these USERNAME and PASSWORD variables in resin.io web console (application or device env var), or you won't be able to save or run anything in Node-RED.
+
+To be able to generate PASSWORD hash properly, you have to setup a local nodejs install, and follow these instructions : https://nodered.org/docs/security#generating-the-password-hash
+
 ## License
 
 Copyright 2016 Resinio Ltd.
