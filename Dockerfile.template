@@ -17,7 +17,7 @@ RUN apk add --no-cache make gcc g++ python && \
 COPY ./app ./
 
 # Enable systemd init system in container
-ENV INITSYSTEM=on
+# ENV INITSYSTEM=on
 
 # server.js will run when container starts up on the device
 CMD ["bash", "/usr/src/app/start.sh"]
