@@ -1,8 +1,8 @@
-# resin-node-red
+# balena-node-red
 
-A Node-RED application with [resin-supervisor](https://docs.resin.io/runtime/supervisor-api/) flow [support](https://github.com/resin-io-projects/node-red-contrib-resinio), can be managed remotely via resin.io [publicURL](https://docs.resin.io/management/devices/#enable-public-device-url)
+A Node-RED application with [balena-supervisor](https://balena.io/docs/reference/supervisor/supervisor-api/) flow [support](https://github.com/balena-projects/node-red-contrib-balena), can be managed remotely via balena [publicURL](https://balena.io/docs/learn/manage/actions/#enable-public-device-url)
 
-## Configure via [environment variables](https://docs.resin.io/management/env-vars/)
+## Configure via [environment variables](https://balena.io/docs/learn/manage/serv-vars/)
 Variable Name | Default | Description
 ------------ | ------------- | -------------
 PORT | `80` | the port that exposes the Node-RED UI
@@ -14,11 +14,11 @@ The hash for the `PASSWORD` variable can be generated using the [`node-red-admin
 command line tool. Instructions for generating a password hash can be found in
 the [Node-RED documentation](https://nodered.org/docs/security#generating-the-password-hash).  
 More information about using and setting environment variables can be found in
-the [resin.io docs](https://docs.resin.io/management/env-vars/).
+the [balena docs](https://balena.io/docs/learn/manage/serv-vars/).
 
 ## License
 
-Copyright 2016 Resinio Ltd.
+Copyright 2016 balena Ltd.
 
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
 
