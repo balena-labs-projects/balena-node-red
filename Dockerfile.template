@@ -8,9 +8,10 @@ RUN mkdir -p /usr/src/app/
 WORKDIR /usr/src/app
 
 # Install node modules, including i2c-bus without carrying all the deps in the layers
-RUN apk add --no-cache make gcc g++ python && \
+RUN apk add --no-cache make gcc g++ python py-pip  python-dev  && \
+  pip install rpi.gpio && \
   JOBS=MAX npm install -g node-red node-red-contrib-resinio --production --silent && \
-  apk del make gcc g++ python && \
+  apk del make gcc g++ python py-pip python-dev && \
   npm cache clean --force && rm -rf /tmp/*
 
 # This will copy all files in our root to the working  directory in the container
