@@ -9,3 +9,5 @@ services:
     restart: always
     privileged: true
     network_mode: host
+    labels:
+      io.balena.features.supervisor-api: '1'
