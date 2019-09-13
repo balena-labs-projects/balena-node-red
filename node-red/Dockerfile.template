@@ -1,17 +1,22 @@
 ###
 # Build step
 ###
-FROM balenalib/%%BALENA_MACHINE_NAME%%-alpine-node:10-build as build
+FROM balenalib/%%BALENA_MACHINE_NAME%%-debian-node:12-stretch-build as build
 
-RUN JOBS=MAX npm install -g --production --silent \
+RUN JOBS=MAX npm install -g --production --unsafe-perm \
        node-red \
        node-red-admin \
-       node-red-contrib-resinio
+       node-red-contrib-balena
 
 ###
 # Runtime image
 ###
-FROM balenalib/%%BALENA_MACHINE_NAME%%-alpine-node:10-run
+FROM balenalib/%%BALENA_MACHINE_NAME%%-debian-node:12-stretch-run
+
+RUN apt-get update && apt-get install -yq --no-install-recommends \
+  python3-dev \
+  python3-rpi.gpio \
+  && apt-get clean && rm -rf /var/lib/apt/lists/*
 
 # Defines our working directory in container
 WORKDIR /usr/src/app
