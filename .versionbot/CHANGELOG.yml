@@ -1,0 +1,34 @@
+- version: 1.0.0
+  date: "2019-03-13T18:47:29Z"
+  commits:
+  - hash: 05f302ff9996738f05666bec390756ae3f9e8abd
+    author: Gergely Imreh
+    footers:
+      change-type: minor
+      signed-off-by: Gergely Imreh <gergely@balena.io>
+    subject: switch to balenalib base image and node 10
+    body: ""
+  - hash: 59c706d49a8723a60d42dfced3cfa121af025fb3
+    author: Misha Brukman
+    subject: Fix link to node-red-contrib-balena repo [skip ci]
+    body: ""
+  - hash: a1a65714cc9dcc0cf8c22261952b6ba80684f8e2
+    author: curcuz
+    subject: disable initsystem
+    body: ""
+  - hash: a9561e2330c439187b7e6edf89a9160c874fba95
+    author: Carlo Maria Curinga
+    subject: pin the LTS nodeJS tag
+    body: ""
+  - hash: cff4e53dd291b530c8ae73c779a6205fb6f1cdcb
+    author: curcuz
+    subject: sitch to alpine slim and do magic for build-essential
+    body: ""
+  - hash: 6d79a25590d79b9f61db43a827f29586ba6a375c
+    author: Lucian Buzzo
+    subject: Reword section on environment variables for additional clarity.
+    body: ""
+  - hash: ccff0907b3632a2b4bfbee7879df39795c019d3a
+    author: Tristan ROBET
+    subject: Precisions about the need to fill some env vars
+    body: ""
