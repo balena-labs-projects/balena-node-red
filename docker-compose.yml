@@ -1,0 +1,11 @@
+version: '2'
+volumes:
+    resin-data:
+services:
+  node-red:
+    build: ./node-red
+    volumes:
+      - 'resin-data:/data'
+    restart: always
+    privileged: true
+    network_mode: host
