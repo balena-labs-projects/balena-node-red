@@ -7,6 +7,8 @@ services:
     volumes:
       - 'resin-data:/data'
     restart: always
+    privileged: true
+    network_mode: host
     labels:
       io.balena.features.supervisor-api: '1'
     cap_add:
