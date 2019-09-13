@@ -1,4 +1,79 @@
 - commits:
+    - subject: add back priviledged flag
+      hash: a05dfd007f5a0648f3bdb89112e8bb6943645d32
+      body: ''
+      footer:
+        Change-type: minor
+        change-type: minor
+        Signed-off-by: Carlo Maria Curinga <carlo@balena.io>
+        signed-off-by: Carlo Maria Curinga <carlo@balena.io>
+      author: curcuz
+    - subject: make sure rpio.gpio is available pt2
+      hash: 4e554743793cfa9dbbd6aa314472fbebb3139c91
+      body: ''
+      footer:
+        Change-type: minor
+        change-type: minor
+        Signed-off-by: Carlo Maria Curinga <carlo@balena.io>
+        signed-off-by: Carlo Maria Curinga <carlo@balena.io>
+      author: curcuz
+    - subject: add correct devices and caps and remove priviledge
+      hash: 8d3ec828fb26213f740cc1481a4cf88403c06dd3
+      body: ''
+      footer:
+        Change-type: minor
+        change-type: minor
+        Signed-off-by: Carlo Maria Curinga <carlo@balena.io>
+        signed-off-by: Carlo Maria Curinga <carlo@balena.io>
+      author: curcuz
+    - subject: make sure rpio.gpio is available to nodered
+      hash: 70f5f65f305c5ce9e32430f0c8fa5dc9bdb93a6e
+      body: ''
+      footer:
+        Change-type: minor
+        change-type: minor
+        Signed-off-by: Carlo Maria Curinga <carlo@balena.io>
+        signed-off-by: Carlo Maria Curinga <carlo@balena.io>
+      author: curcuz
+    - subject: make sure node-red can talk with the supervisor
+      hash: 224118068da663c6375f7d7b53340b650daa943a
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Carlo Maria Curinga <carlo@balena.io>
+        signed-off-by: Carlo Maria Curinga <carlo@balena.io>
+      author: curcuz
+    - subject: refactor to multicontainer and balena assets
+      hash: 278b179be4a7a65fb4f56011fa9126a089805182
+      body: ''
+      footer:
+        Change-type: major
+        change-type: major
+        Signed-off-by: Carlo Maria Curinga <carlo@balena.io>
+        signed-off-by: Carlo Maria Curinga <carlo@balena.io>
+      author: curcuz
+    - subject: make sure node-red can talk with the supervisor
+      hash: f0be97f2cba0c6a60f6f28bf8a81f472e5bbe211
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Carlo Maria Curinga <carlo@balena.io>
+        signed-off-by: Carlo Maria Curinga <carlo@balena.io>
+      author: curcuz
+    - subject: refactor to multicontainer and balena assets
+      hash: 517bf39be9f3d78db6d06539a166cb5278a0a58f
+      body: ''
+      footer:
+        Change-type: major
+        change-type: major
+        Signed-off-by: Carlo Maria Curinga <carlo@balena.io>
+        signed-off-by: Carlo Maria Curinga <carlo@balena.io>
+      author: curcuz
+  version: 2.0.0
+  date: 2019-09-13T20:23:33.077Z
+- commits:
     - subject: Regenerate changelog file with previous commits
       hash: bd837e2d6aa0d2e74da58569cbd91346c4904c8a
       body: ''
