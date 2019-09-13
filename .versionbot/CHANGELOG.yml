@@ -1,4 +1,16 @@
 - commits:
+    - subject: 'add correct deps, devices and caps'
+      hash: 23b7a40398841759f1f68666bb5c0018d2b5ac6e
+      body: ''
+      footer:
+        Change-type: minor
+        change-type: minor
+        Signed-off-by: Carlo Maria Curinga <carlo@balena.io>
+        signed-off-by: Carlo Maria Curinga <carlo@balena.io>
+      author: curcuz
+  version: 2.1.0
+  date: 2019-09-13T20:30:07.500Z
+- commits:
     - subject: make sure node-red can talk with the supervisor
       hash: 806410cc1a6ed2462bac137d8825e6ae26c89159
       body: ''
