@@ -5,4 +5,4 @@ RUN apt-get update && \
                     pigpio \
                     python-pigpio
 
-CMD [ "/usr/bin/pigpiod" ]
+CMD [ "pigpiod" ]
