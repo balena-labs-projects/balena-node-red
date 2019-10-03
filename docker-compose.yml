@@ -19,3 +19,13 @@ services:
       - "/dev/i2c-1:/dev/i2c-1"
     ports:
       - 80:80
+  pigpiod:
+    build: ./pigpiod
+    restart: always
+    privileged: true
+    network_mode : host
+    devices:
+      - "/dev/mem:/dev/mem"
+      - "/dev/gpiomem:/dev/gpiomem"
+      - "/dev/i2c-1:/dev/i2c-1"
+
