@@ -7,7 +7,7 @@ RUN apt-get update && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
-# for pigpiod options see http://abyz.me.uk/rpi/pigpio/pigpiod.html
-#    option -g will run the deamon in the foreground.
-#    option -a 1 should assure that we are not using GPU memory.
-CMD [ "/usr/bin/pigpiod", "-g" , "-a 1"]
+# This will copy the start script
+COPY ./start.sh ./
+
+CMD [ "bash, "./start.sh"]
