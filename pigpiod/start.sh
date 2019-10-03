@@ -8,7 +8,9 @@ echo "Starting daemon pigpiod ..."
 /usr/bin/pigpiod -g -a 1
 
 echo "... daemon stopped unexpectedly."
-echo "sleeping for 5s - we hope that this releases the bound TCP port"
+echo "netstat -tl | grep 8888"
+netstat -tl | grep 8888
+echo "sleeping for 5s - we hope that this releases the bound TCP port 8888"
 sleep 5
 echo "end of sleep"
 echo "netstat -tl | grep 8888"
