@@ -5,4 +5,5 @@ RUN apt-get update && \
                     pigpio \
                     python-pigpio
 
-CMD [ "sleep", "3600" ]
+# option -g will run it in the foreground.
+CMD [ "/usr/bin/pigpiod", "-g" ]
