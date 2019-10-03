@@ -7,7 +7,6 @@ RUN apt-get update && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
-# This will copy the start script
-COPY ./start.sh ./
-
-CMD [ "bash, "./start.sh"]
+# Copy and Start app
+ADD start.sh /start.sh
+CMD ["bash", "/start.sh"]
