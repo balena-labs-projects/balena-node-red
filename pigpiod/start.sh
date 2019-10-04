@@ -10,8 +10,9 @@ echo "Starting daemon pigpiod ..."
 echo "... daemon stopped unexpectedly."
 echo "netstat -tl | grep 8888"
 netstat -tl | grep 8888
-echo "sleeping for 5s - we hope that this releases the bound TCP port 8888"
-sleep 5
+# see also issue https://github.com/janvda/balena-node-red/issues/1
+echo "sleeping for 20 sec - we hope that this releases the bound TCP port 8888"
+sleep 20
 echo "end of sleep"
 echo "netstat -tl | grep 8888"
 netstat -tl | grep 8888
