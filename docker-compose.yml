@@ -8,7 +8,7 @@ services:
       - 'resin-data:/data'
     restart: always
     privileged: true
-    network_mode: host
+    #network_mode: host
     labels:
       io.balena.features.supervisor-api: '1'
     cap_add:
@@ -23,7 +23,7 @@ services:
     build: ./pigpiod
     restart: always
     privileged: true
-    network_mode : host
+    #network_mode : host
     devices:
       - "/dev/mem:/dev/mem"
       - "/dev/gpiomem:/dev/gpiomem"
