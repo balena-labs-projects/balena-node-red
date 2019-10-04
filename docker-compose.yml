@@ -1,26 +1,25 @@
 version: '2'
 volumes:
-    resin-data:
+    node-red-data:
 services:
   node-red:
     build: ./node-red
     volumes:
-      - 'resin-data:/data'
+      - 'node-red-data:/data'
     restart: always
     privileged: true
-    #network_mode: host
     labels:
       io.balena.features.supervisor-api: '1'
     ports:
-      - 80:80
+      - 80:80  # will make that the balena public URL maps to the node-red editor.
   pigpiod:
     build: ./pigpiod
     restart: always
     privileged: true
-    #network_mode : host
     cap_add:
-      - SYS_RAWIO
+      - SYS_RAWIO  # not sure if this is really needed
     devices:
+      # not sure if all below options are really needed.
       - "/dev/mem:/dev/mem"
       - "/dev/gpiomem:/dev/gpiomem"
       - "/dev/i2c-1:/dev/i2c-1"
