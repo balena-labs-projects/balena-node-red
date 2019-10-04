@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Make the default flows available in the user library
+# Make the flow balena_flows.json available in the user library
 mkdir -p /data/node-red/user/lib/flows || true
 cp /usr/src/app/balena_flows.json /data/node-red/user/lib/flows/
 
