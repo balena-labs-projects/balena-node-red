@@ -11,7 +11,7 @@ services:
     labels:
       io.balena.features.supervisor-api: '1'
     ports:
-      - 80:80  # will make that the balena public URL maps to the node-red editor.
+      - 80:1880  # will make that the balena public URL maps to the node-red editor.
   pigpiod:
     build: ./pigpiod
     restart: always
