@@ -2,10 +2,10 @@
 
 A Node-RED application with [balena-supervisor](https://balena.io/docs/reference/supervisor/supervisor-api/) flow [support](https://github.com/balena-io-projects/node-red-contrib-balena), can be managed remotely via balena [publicURL](https://balena.io/docs/learn/manage/actions/#enable-public-device-url)
 
-## Configure via [environment variables](https://balena.io/docs/learn/manage/serv-vars/)
+## Configure node-red service via [environment variables](https://balena.io/docs/learn/manage/serv-vars/)
 Variable Name | Default | Description
 ------------ | ------------- | -------------
-PORT | `80` | the port that exposes the Node-RED UI
+PORT | `1880` | the port that exposes the Node-RED editor.  Note that host port 80 is mapped to 1880 so that Node-RED editor can also be accessed through the Balena publicURL if activated.
 USERNAME | `none` | the Node-RED admin username
 PASSWORD | `none` | the Node-RED admin password [hash](https://nodered.org/docs/security#generating-the-password-hash)
 
