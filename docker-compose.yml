@@ -23,4 +23,8 @@ services:
       - "/dev/mem:/dev/mem"
       - "/dev/gpiomem:/dev/gpiomem"
       - "/dev/i2c-1:/dev/i2c-1"
+    ports:
+      # this is only needed in case applications not running on this device also want to connect to
+      # this pigpiod daemon.
+      - 8888:8888  
 
