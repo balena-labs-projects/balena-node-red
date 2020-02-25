@@ -1,4 +1,18 @@
 - commits:
+    - subject: 'Dockerfile: Add missing libatomic1 dependency'
+      hash: 78aebdba80ed38922f19730488972fe3261dec37
+      body: ''
+      footer:
+        Connects-to: '#32'
+        connects-to: '#32'
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Heds Simons <heds@balena.io>
+        signed-off-by: Heds Simons <heds@balena.io>
+      author: Heds Simons
+  version: 2.1.1
+  date: 2020-02-24T22:46:02.555Z
+- commits:
     - subject: 'add correct deps, devices and caps'
       hash: 23b7a40398841759f1f68666bb5c0018d2b5ac6e
       body: ''
