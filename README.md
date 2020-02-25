@@ -1,11 +1,15 @@
 # balena-node-red
 
-A Node-RED application with [balena-supervisor](https://balena.io/docs/reference/supervisor/supervisor-api/) flow [support](https://github.com/balena-io-projects/node-red-contrib-balena), can be managed remotely via balena [publicURL](https://balena.io/docs/learn/manage/actions/#enable-public-device-url)
+This application consists of 2 services:
+* `node-red` = A [Node-RED](https://nodered.org/) application that can be accessed remotely via the balena [publicURL](https://balena.io/docs/learn/manage/actions/#enable-public-device-url).  It consists of the following 2 flows (or tabs): 
+  * `Supervisor`: uses [node-red-contrib-balena](https://github.com/balena-io-projects/node-red-contrib-balena) to interact with the  [balena-supervisor](https://balena.io/docs/reference/supervisor/supervisor-api/). 
+  * `GPIO`: simple flow shows how the node [node-red-node-pigpiod](https://flows.nodered.org/node/node-red-node-pi-gpiod) can be used to read GPIO pins from the raspberry pi.
+* `pigpiod` = this service runs the daemon [pigpiod](http://abyz.me.uk/rpi/pigpio/pigpiod.html).  This daemon must be running if you want to interact with the GPIO pins of your raspberry pi using the Node-RED node [node-red-node-pigpiod](https://flows.nodered.org/node/node-red-node-pi-gpiod)
 
-## Configure via [environment variables](https://balena.io/docs/learn/manage/serv-vars/)
+## Configure node-red service via [environment variables](https://balena.io/docs/learn/manage/serv-vars/)
 Variable Name | Default | Description
 ------------ | ------------- | -------------
-PORT | `80` | the port that exposes the Node-RED UI
+PORT | `1880` | the port that exposes the Node-RED editor.  Note that host port 80 is mapped to 1880 so that Node-RED editor can also be accessed through the Balena publicURL if activated.
 USERNAME | `none` | the Node-RED admin username
 PASSWORD | `none` | the Node-RED admin password [hash](https://nodered.org/docs/security#generating-the-password-hash)
 
