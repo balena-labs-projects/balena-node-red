@@ -1,4 +1,17 @@
 - commits:
+    - subject: Add a DWB button
+      hash: 1ecf5a84b8942b30301e6f4a5927833b4434c1f8
+      body: ''
+      footer:
+        Change-type: minor
+        change-type: minor
+        Signed-off-by: Stevche Radevski <stevche@balena.io>
+        signed-off-by: Stevche Radevski <stevche@balena.io>
+      author: Stevche Radevski
+      nested: []
+  version: 2.2.0
+  date: 2020-09-14T10:17:33.644Z
+- commits:
     - subject: 'Dockerfile: Add missing libatomic1 dependency'
       hash: 78aebdba80ed38922f19730488972fe3261dec37
       body: ''
