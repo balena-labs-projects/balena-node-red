@@ -1,4 +1,17 @@
 - commits:
+    - subject: add Dockerfile for rpi4
+      hash: 067a90ab37014b5780336a50b9708b0870507579
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Juan Fernandez Ridano <juanfr@balena.io>
+        signed-off-by: Juan Fernandez Ridano <juanfr@balena.io>
+      author: Juan Fernandez Ridano
+      nested: []
+  version: 2.2.1
+  date: 2020-09-14T13:17:58.873Z
+- commits:
     - subject: Add a DWB button
       hash: 1ecf5a84b8942b30301e6f4a5927833b4434c1f8
       body: ''
