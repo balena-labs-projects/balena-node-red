@@ -1,4 +1,17 @@
 - commits:
+    - subject: Use svg deploy with balena button
+      hash: 8e8a5a01e59910547d5d82b671218339ce9f6f4a
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Amit Solanki <amit@balena.io>
+        signed-off-by: Amit Solanki <amit@balena.io>
+      author: Amit Solanki
+      nested: []
+  version: 2.2.2
+  date: 2020-12-31T10:25:53.280Z
+- commits:
     - subject: add Dockerfile for rpi4
       hash: 067a90ab37014b5780336a50b9708b0870507579
       body: ''
