@@ -13,9 +13,6 @@ data:
     - PORT: 80
   defaultDeviceType: raspberry-pi
   supportedDeviceTypes:
-    - "raspberry-pi"
-    - "raspberry-pi2"
     - "raspberrypi3"
     - "raspberrypi4-64"
     - "fincm3"
-    - "intel-nuc"
