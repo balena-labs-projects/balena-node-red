@@ -1,4 +1,60 @@
 - commits:
+    - subject: >-
+        Squashing 3 commits. Update the balena.yml file to conform to current
+        `balena push` requirements. Removed the 'version' tag from the contract.
+        Retained only pi3, pi4-64, and fincm3 as the supported devices.
+      hash: ea489272790a5b1f53df66378b44543d6f76dc03
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Pranav Peshwe <pranav@balena.io>
+        signed-off-by: Pranav Peshwe <pranav@balena.io>
+        Connects-to: '#37'
+        connects-to: '#37'
+      author: Pranav Peshwe
+      nested: []
+    - subject: 'Retained only pi3, pi4-64, and fincm3 as the supported devices.'
+      hash: 4fa9827331754c39e9ebcb9536fdbbcf76b28249
+      body: ''
+      footer:
+        Change-type: minor
+        change-type: minor
+        Signed-off-by: Pranav Peshwe <pranav@balena.io>
+        signed-off-by: Pranav Peshwe <pranav@balena.io>
+        Connects-to: '#37'
+        connects-to: '#37'
+      author: Pranav Peshwe
+      nested: []
+    - subject: Removed the 'version' tag from the contract.
+      hash: 28f39af50d96e8d92e5f4c80034571568f9eae48
+      body: ''
+      footer:
+        Change-type: minor
+        change-type: minor
+        Signed-off-by: Pranav Peshwe <pranav@balena.io>
+        signed-off-by: Pranav Peshwe <pranav@balena.io>
+        Connects-to: '#37'
+        connects-to: '#37'
+      author: Pranav Peshwe
+      nested: []
+    - subject: >-
+        Update the balena.yml file to conform to current `balena push`
+        requirements.
+      hash: e64f0c7a8217b81e7cf8acfe70382b89248639fb
+      body: ''
+      footer:
+        Change-type: minor
+        change-type: minor
+        Signed-off-by: Pranav Peshwe <pranav@balena.io>
+        signed-off-by: Pranav Peshwe <pranav@balena.io>
+        Connects-to: '#37'
+        connects-to: '#37'
+      author: Pranav Peshwe
+      nested: []
+  version: 2.3.0
+  date: 2021-03-12T06:08:55.820Z
+- commits:
     - subject: Use svg deploy with balena button
       hash: 8e8a5a01e59910547d5d82b671218339ce9f6f4a
       body: ''
