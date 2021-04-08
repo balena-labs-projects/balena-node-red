@@ -1,4 +1,21 @@
 - commits:
+    - subject: >-
+        Update the balena.yml file to conform to current `balena push`
+        requirement.
+      hash: ec60bd25df5490dbe151051c9003f642f386904e
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Pranav Peshwe <pranav@balena.io>
+        signed-off-by: Pranav Peshwe <pranav@balena.io>
+        Connects-to: '#37'
+        connects-to: '#37'
+      author: Pranav Peshwe
+      nested: []
+  version: 2.2.3
+  date: 2021-03-12T07:36:40.113Z
+- commits:
     - subject: Use svg deploy with balena button
       hash: 8e8a5a01e59910547d5d82b671218339ce9f6f4a
       body: ''
