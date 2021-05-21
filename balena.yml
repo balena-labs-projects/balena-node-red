@@ -3,6 +3,7 @@ type: sw.application
 description: >-
   Build a Node-RED application with balena-supervisor flow support that can be
   managed remotely via balena publicURL.
+joinable: false
 assets:
   repository:
     type: blob.asset
