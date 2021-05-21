@@ -1,4 +1,17 @@
 - commits:
+    - subject: contract update
+      hash: aa5ec54e901abc2d76be86dffb22f9547710a571
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Phil Wilson <phil@balena.io>
+        signed-off-by: Phil Wilson <phil@balena.io>
+      author: Phil Wilson
+      nested: []
+  version: 2.2.4
+  date: 2021-05-21T08:34:40.712Z
+- commits:
     - subject: >-
         Update the balena.yml file to conform to current `balena push`
         requirement.
