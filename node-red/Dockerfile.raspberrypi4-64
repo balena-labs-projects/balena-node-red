@@ -5,8 +5,8 @@ FROM balenalib/raspberrypi3-debian-node:12-stretch-build as build
 
 RUN JOBS=MAX npm install -g --production --unsafe-perm \
        node-red \
-       node-red-admin \
-       node-red-contrib-balena
+       node-red-contrib-balena \
+       bcryptjs
 
 ###
 # Runtime image
@@ -14,6 +14,7 @@ RUN JOBS=MAX npm install -g --production --unsafe-perm \
 FROM balenalib/raspberrypi3-debian-node:12-stretch-run
 
 RUN apt-get update && apt-get install -yq --no-install-recommends \
+  wget \
   rpi.gpio \
   python-dev \
   python-rpi.gpio \
@@ -23,6 +24,12 @@ RUN apt-get update && apt-get install -yq --no-install-recommends \
 # Defines our working directory in container
 WORKDIR /usr/src/app
 
+# Install wifi-connect
+RUN mkdir wificonnect && curl https://api.github.com/repos/balena-io/wifi-connect/releases/latest -Ls \
+    | grep -hoP 'browser_download_url": "\K.*%%BALENA_ARCH%%\.tar\.gz' \
+    | xargs -n1 curl -Ls \
+    | tar -xvz -C /usr/src/app/wificonnect
+    
 # Copy over the files created in the previous step, including lib/, bin/
 COPY --from=build /usr/local/bin /usr/local/bin
 COPY --from=build /usr/local/lib/node_modules /usr/local/lib/node_modules
