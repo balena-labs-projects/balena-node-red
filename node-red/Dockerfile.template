@@ -4,12 +4,12 @@
 FROM balenalib/%%BALENA_MACHINE_NAME%%-debian-node:12-stretch-build as build
 
 WORKDIR /usr/src/app
+COPY ./app/package.json package.json
 
 RUN JOBS=MAX npm install -g --production --unsafe-perm \
       node-red \
       node-red-contrib-balena \
-    && JOBS=MAX npm install --production --unsafe-perm \
-      bcryptjs
+    && JOBS=MAX npm install --unsafe-perm --production && npm cache clean --force
 
 ###
 # Runtime image
