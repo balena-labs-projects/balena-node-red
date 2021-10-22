@@ -12,8 +12,8 @@ Or, you can create an application in your balenaCloud dashboard and balena push 
 Variable Name | Default | Description
 ------------ | ------------- | -------------
 PORT | `80` | the port that exposes the Node-RED UI
-USERNAME | `none` | the Node-RED admin username
-PASSWORD | `none` | the Node-RED admin password
+USERNAME | `balena` | the Node-RED admin username
+PASSWORD | `balena` | the Node-RED admin password
 
 You **must** set the `USERNAME` and `PASSWORD` environment variables to be able to save or run programs in Node-RED.  
 More information about using and setting environment variables can be found in
