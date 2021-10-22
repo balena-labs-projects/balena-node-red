@@ -11,6 +11,9 @@ services:
     network_mode: host
     labels:
       io.balena.features.supervisor-api: '1'
+    environment:
+      - "USERNAME=balena"
+      - "PASSWORD=balena"
     cap_add:
       - SYS_RAWIO
     devices:

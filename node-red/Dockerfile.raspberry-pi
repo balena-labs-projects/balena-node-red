@@ -1,7 +1,7 @@
 ###
 # Build step
 ###
-FROM balenalib/raspberrypi3-debian-node:12-stretch-build as build
+FROM balenalib/raspberry-pi-debian-node:12-stretch-build as build
 
 WORKDIR /usr/src/app
 COPY ./app/package.json package.json
@@ -15,7 +15,7 @@ RUN JOBS=MAX npm install -g --production --unsafe-perm \
 ###
 # Runtime image
 ###
-FROM balenalib/raspberrypi3-debian-node:12-stretch-run
+FROM balenalib/raspberry-pi-debian-node:12-stretch-run
 
 RUN apt-get update && apt-get install -yq --no-install-recommends \
   rpi.gpio \

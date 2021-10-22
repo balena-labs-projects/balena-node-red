@@ -9,12 +9,22 @@ assets:
     type: blob.asset
     data:
       url: 'https://github.com/balenalabs/balena-node-red'
+  logo:
+    type: blob.asset
+    data:
+      url: >-
+        https://raw.githubusercontent.com/balenablocks/balena-node-red/master/logo.png
 data:
   applicationEnvironmentVariables:
     - PORT: 80
-  defaultDeviceType: raspberry-pi
+    - USERNAME: balena
+    - PASSWORD: balena
+  defaultDeviceType: raspberry4-64
   supportedDeviceTypes:
+    - raspberry-pi
+    - raspberry-pi2
     - raspberrypi3
+    - raspberrypi3-64
     - raspberrypi4-64
     - fincm3
-version: 2.2.4
+    

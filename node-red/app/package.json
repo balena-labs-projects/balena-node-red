@@ -1,0 +1,33 @@
+{
+  "name": "balena-node-red",
+  "version": "1.0.0",
+  "description": "A Node-RED application with balena-supervisor flow support, can be managed remotely via balena publicURL",
+  "main": "settings.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/balenablocks/balena-node-red.git"
+  },
+  "keywords": [
+    "balena",
+    "io",
+    "node",
+    "red",
+    "node-red",
+    "nodered",
+    "js",
+    "flow",
+    "supervisor"
+  ],
+  "author": "Carlo Maria Curinga <carlo@balena.io>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/balenablocks/balena-node-red/issues"
+  },
+  "homepage": "https://github.com/balenablocks/balena-node-red#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3"
+  }
+}

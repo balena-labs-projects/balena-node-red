@@ -1,3 +1,5 @@
+const bcrypt = require('bcryptjs');
+const PASSWORD = bcrypt.hashSync(process.env.PASSWORD, 8);
 /**
  * Copyright 2013, 2016 IBM Corp.
  *
@@ -106,13 +108,10 @@ module.exports = {
         type: "credentials",
         users: [{
             username: process.env.USERNAME,
-            password: process.env.PASSWORD,
+            password: PASSWORD,
             permissions: "*"
         }],
-        default: {
-            permissions: "read"
-        }
-    },
+    }, 
 
     // To password protect the node-defined HTTP endpoints (httpNodeRoot), or
     // the static content (httpStatic), the following properties can be used.
@@ -189,7 +188,7 @@ module.exports = {
     //paletteCategories: ['subflows', 'input', 'output', 'function', 'social', 'mobile', 'storage', 'analysis', 'advanced'],
     editorTheme: {
         page: {
-            title: "balena Node-RED",
+            title: "balena Node-RED",  
             favicon: "/usr/src/app/assets/favicon.ico"
         },
         header: {
@@ -199,6 +198,9 @@ module.exports = {
         },
         login: {
             image: "/usr/src/app/assets/logo.png" // a 256x256 image
+        },
+        projects: {
+            enabled: true
         }
     },
     // Configure the logging output
@@ -212,7 +214,7 @@ module.exports = {
             // info - record information about the general running of the application + warn + error + fatal errors
             // debug - record information which is more verbose than info + info + warn + error + fatal errors
             // trace - record very detailed logging + debug + info + warn + error + fatal errors
-            level: "info",
+            level: process.env.LOGLEVEL || "info",
             // Whether or not to include metric events in the log output
             metrics: false,
             // Whether or not to include audit events in the log output
