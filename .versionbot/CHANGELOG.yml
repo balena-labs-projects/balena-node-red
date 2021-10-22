@@ -1,4 +1,17 @@
 - commits:
+    - subject: make sure ssh workflow 4 projects works
+      hash: 2b5a49d52c76b34748a249d269a0aaf3e5f86911
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Carlo Maria Curinga <carlo@balena.io>
+        signed-off-by: Carlo Maria Curinga <carlo@balena.io>
+      author: curcuz
+      nested: []
+  version: 2.3.1
+  date: 2021-10-22T17:09:16.290Z
+- commits:
     - subject: remove deprecated password hashing instructions
       hash: e29656b491b4c8697f8cb1dd2f2096efa1f30b30
       body: ''
