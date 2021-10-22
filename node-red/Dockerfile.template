@@ -5,6 +5,7 @@ FROM balenalib/%%BALENA_MACHINE_NAME%%-debian-node:12-stretch-build as build
 
 WORKDIR /usr/src/app
 COPY ./app/package.json package.json
+COPY ./app/package-lock.json package-lock.json
 
 RUN JOBS=MAX npm install -g --production --unsafe-perm \
       node-red \
