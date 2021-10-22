@@ -188,7 +188,7 @@ module.exports = {
     //paletteCategories: ['subflows', 'input', 'output', 'function', 'social', 'mobile', 'storage', 'analysis', 'advanced'],
     editorTheme: {
         page: {
-            title: "balena Node-RED",
+            title: "balena Node-RED",  
             favicon: "/usr/src/app/assets/favicon.ico"
         },
         header: {
@@ -198,6 +198,9 @@ module.exports = {
         },
         login: {
             image: "/usr/src/app/assets/logo.png" // a 256x256 image
+        },
+        projects: {
+            enabled: true
         }
     },
     // Configure the logging output
