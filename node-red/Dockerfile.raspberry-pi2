@@ -22,6 +22,8 @@ RUN apt-get update && apt-get install -yq --no-install-recommends \
   python-dev \
   python-rpi.gpio \
   libatomic1 \
+  git \
+  openssh-client \
   && apt-get clean && rm -rf /var/lib/apt/lists/*
 
 # Defines our working directory in container
