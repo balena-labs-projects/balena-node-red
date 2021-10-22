@@ -19,6 +19,7 @@ data:
     - PORT: 80
     - USERNAME: balena
     - PASSWORD: balena
+    - ENCRIPTION_KEY: balena
   defaultDeviceType: raspberry4-64
   supportedDeviceTypes:
     - raspberry-pi
