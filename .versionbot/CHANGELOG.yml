@@ -1,4 +1,17 @@
 - commits:
+    - subject: remove deprecated password hashing instructions
+      hash: e29656b491b4c8697f8cb1dd2f2096efa1f30b30
+      body: ''
+      footer:
+        Change-type: minor
+        change-type: minor
+        Signed-off-by: Carlo Maria Curinga <carlo@balena.io>
+        signed-off-by: Carlo Maria Curinga <carlo@balena.io>
+      author: curcuz
+      nested: []
+  version: 2.3.0
+  date: 2021-10-22T12:24:07.272Z
+- commits:
     - subject: contract update
       hash: aa5ec54e901abc2d76be86dffb22f9547710a571
       body: ''
