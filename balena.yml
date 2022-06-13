@@ -1,14 +1,13 @@
 name: balena-node-red
-type: sw.application
+type: sw.block
 description: >-
   Build a Node-RED application with balena-supervisor flow support that can be
-  managed remotely via balena publicURL.
-joinable: false
+  managed remotely via balena public URL.
 assets:
   repository:
     type: blob.asset
     data:
-      url: 'https://github.com/balenalabs/balena-node-red'
+      url: "https://github.com/balenalabs/balena-node-red"
   logo:
     type: blob.asset
     data:

@@ -1,0 +1,32 @@
+name: balena
+
+on:
+  pull_request:
+    types: [opened, synchronize, closed]
+    branches:
+      - master
+
+env:
+  ENVIRONMENT: balena-cloud.com
+
+jobs:
+  deploy:
+    runs-on: ubuntu-20.04
+    strategy:
+      fail-fast: true
+      matrix:
+        fleet:
+          [
+            balenablocks/balena-node-red-amd64,
+            balenablocks/balena-node-red-aarch64,
+            balenablocks/balena-node-red-armv7hf,
+          ]
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: balena-io/deploy-to-balena-action@v0.11.0
+        with:
+          balena_token: ${{ secrets.BALENA_API_KEY }}
+          fleet: ${{ matrix.fleet }}
+          environment: ${{ env.ENVIRONMENT }}
+          versionbot: true
