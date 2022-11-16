@@ -1,0 +1,16 @@
+name: Flowzone
+
+on:
+  pull_request:
+    types: [opened, synchronize, closed]
+    branches:
+      - "main"
+      - "master"
+
+jobs:
+  flowzone:
+    name: Flowzone
+    uses: product-os/flowzone/.github/workflows/flowzone.yml@master
+    secrets: inherit
+    with:
+      balena_slugs: 'balenalabs/balena-node-red,balenalabs/balena-node-red-amd64,balenalabs/balena-node-red-aarch64,balenalabs/balena-node-red-armv7hf'
