@@ -7,12 +7,12 @@ assets:
   repository:
     type: blob.asset
     data:
-      url: "https://github.com/balenalabs/balena-node-red"
+      url: "https://github.com/balena-labs-projects/balena-node-red"
   logo:
     type: blob.asset
     data:
       url: >-
-        https://raw.githubusercontent.com/balenablocks/balena-node-red/master/logo.png
+        https://raw.githubusercontent.com/balena-labs-projects/balena-node-red/master/logo.png
 data:
   applicationEnvironmentVariables:
     - PORT: 80
