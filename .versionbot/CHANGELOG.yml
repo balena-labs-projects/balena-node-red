@@ -1,4 +1,18 @@
 - commits:
+    - subject: moving from balenablocks to balena-labs-projects
+      hash: 1f932a1081c79fc5673aeed63e580579a94c5a10
+      body: ""
+      footer:
+        Signed-off-by: Flynn Joffray <flynn@balena.io>
+        signed-off-by: Flynn Joffray <flynn@balena.io>
+        Change-type: patch
+        change-type: patch
+      author: Flynn Joffray
+      nested: []
+  version: 2.4.1
+  title: ""
+  date: 2022-11-16T01:40:06.716Z
+- commits:
     - subject: Fixes node-red block
       hash: b4965d960a5888ef99d7d856f33ef3e192998f41
       body: ""
