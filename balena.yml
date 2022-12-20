@@ -27,4 +27,4 @@ data:
     - raspberrypi3-64
     - raspberrypi4-64
     - fincm3
-version: 2.4.1
+version: 2.4.2

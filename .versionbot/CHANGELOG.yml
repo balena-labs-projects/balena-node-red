@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update start.sh
+      hash: 960bf62270019047cabb27302a9cbb590370f621
+      body: |
+        Update start.sh to don't re-write the flows directory every time
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Marc Pous
+      nested: []
+  version: 2.4.2
+  title: ""
+  date: 2022-12-20T16:22:06.789Z
+- commits:
     - subject: moving from balenablocks to balena-labs-projects
       hash: 1f932a1081c79fc5673aeed63e580579a94c5a10
       body: ""
