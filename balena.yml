@@ -1,8 +1,8 @@
 name: balena-node-red
 type: sw.block
 description: >-
-  Build a Node-RED application with balena-supervisor flow support
-  that can be managed remotely via balena public URL.
+  Build a Node-RED application with balena-supervisor flow support that can be
+  managed remotely via balena public URL.
 assets:
   repository:
     type: blob.asset
@@ -27,4 +27,4 @@ data:
     - raspberrypi3-64
     - raspberrypi4-64
     - fincm3
-version: 2.4.1
+version: 2.5.0

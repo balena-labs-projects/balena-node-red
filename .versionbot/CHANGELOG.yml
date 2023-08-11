@@ -1,4 +1,18 @@
 - commits:
+    - subject: Updated base images and python
+      hash: b8b825632f96f724616c2197ba8be610c84f73df
+      body: ""
+      footer:
+        Change-type: minor
+        change-type: minor
+        Signed-off-by: Phil Wilson <phil@balena.io>
+        signed-off-by: Phil Wilson <phil@balena.io>
+      author: Phil Wilson
+      nested: []
+  version: 2.5.0
+  title: ""
+  date: 2023-08-11T09:25:15.007Z
+- commits:
     - subject: moving from balenablocks to balena-labs-projects
       hash: 1f932a1081c79fc5673aeed63e580579a94c5a10
       body: ""
