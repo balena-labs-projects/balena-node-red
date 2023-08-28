@@ -12,7 +12,7 @@ ssh-keyscan -t rsa github.com >> /data/known_hosts
 
 # Make the default flows available in the user library
 mkdir -p /data/node-red/user/lib/flows || true
-cp /usr/src/app/flows/* /data/node-red/user/lib/flows/
+cp /usr/src/app/flows/balena.json /data/node-red/user/lib/flows/balena.json
 
 # Start node-red
 node-red --settings /usr/src/app/settings.js
