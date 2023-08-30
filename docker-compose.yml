@@ -15,6 +15,7 @@ services:
       - "USERNAME=balena"
       - "PASSWORD=balena"
       - "ENCRIPTION_KEY=balena"
+      - "HTTP_ROOT=/"
     cap_add:
       - SYS_RAWIO
     devices:
