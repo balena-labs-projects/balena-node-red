@@ -14,7 +14,7 @@ services:
     environment:
       - "USERNAME=balena"
       - "PASSWORD=balena"
-      - "ENCRIPTION_KEY=balena"
+      - "ENCRYPTION_KEY=balena"
     cap_add:
       - SYS_RAWIO
     devices:
