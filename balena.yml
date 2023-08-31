@@ -19,6 +19,7 @@ data:
     - USERNAME: balena
     - PASSWORD: balena
     - ENCRIPTION_KEY: balena
+    - HTTP_ROOT: "/"
   defaultDeviceType: raspberry4-64
   supportedDeviceTypes:
     - raspberry-pi
